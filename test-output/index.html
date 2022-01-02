@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\pooja.mittal\AppData\Local\Temp\testng-eclipse--1747849959\testng-customsuite.xml</span>
+                    <span>C:\Users\pooja.mittal\AppData\Local\Temp\testng-eclipse-939203559\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Selenium4Features.KeyboardActions" class="method navigator-link" hash-for-method="keydown">keydown</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium4Features.WebElementsFeatures" class="method navigator-link" hash-for-method="ElementEnabled">ElementEnabled</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,16 +122,16 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Selenium4Features.KeyboardActions</span>
+              <span class="class-name">Selenium4Features.WebElementsFeatures</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="keydown">
-                  </a> <!-- keydown -->
-                  <span class="method-name">keydown</span>
+                  <a name="ElementEnabled">
+                  </a> <!-- ElementEnabled -->
+                  <span class="method-name">ElementEnabled</span>
                   <em>
-(KeyDown)                  </em>
+(Check Element is enabled and selected)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +139,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pooja.mittal\AppData\Local\Temp\testng-eclipse--1747849959\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\pooja.mittal\AppData\Local\Temp\testng-eclipse-939203559\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +148,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Selenium4Features.KeyboardActions&quot;/&gt;
+      &lt;class name=&quot;Selenium4Features.WebElementsFeatures&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ElementEnabled&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Selenium4Features.WebElementsFeatures --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'keydown')
-data.setCell(0, 2, 'Selenium4Features.KeyboardActions')
-data.setCell(0, 3, 20501);
+data.setCell(0, 1, 'ElementEnabled')
+data.setCell(0, 2, 'Selenium4Features.WebElementsFeatures')
+data.setCell(0, 3, 3122);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -212,9 +216,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Selenium4Features.WebElementsFeatures</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">GetActiveElement</span>
+                <br/>
+                <span class="ignored-method-name">ElementsWithinElements</span>
+                <br/>
+                <span class="ignored-method-name">WebElementsList</span>
+                <br/>
+                <span class="ignored-method-name">GetAttributes</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -223,11 +240,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Selenium4Features.KeyboardActions</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">keydown</span>
+              <div class="chronological-class-name">Selenium4Features.WebElementsFeatures</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">DriverSetup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ElementEnabled</span>
+                <span class="method-start">8100 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11227 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

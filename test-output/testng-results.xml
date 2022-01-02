@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-31T19:48:38 IST" name="Default suite" finished-at="2021-12-31T19:48:59 IST" duration-ms="20603">
+  <suite started-at="2022-01-02T11:43:39 IST" name="Default suite" finished-at="2022-01-02T11:43:51 IST" duration-ms="12071">
     <groups>
     </groups>
-    <test started-at="2021-12-31T19:48:38 IST" name="Default test" finished-at="2021-12-31T19:48:59 IST" duration-ms="20603">
-      <class name="Selenium4Features.KeyboardActions">
-        <test-method signature="keydown()[pri:0, instance:Selenium4Features.KeyboardActions@212b5695]" started-at="2021-12-31T19:48:38 IST" name="keydown" description="KeyDown" finished-at="2021-12-31T19:48:59 IST" duration-ms="20501" status="PASS">
+    <test started-at="2022-01-02T11:43:39 IST" name="Default test" finished-at="2022-01-02T11:43:51 IST" duration-ms="12071">
+      <class name="Selenium4Features.WebElementsFeatures">
+        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:Selenium4Features.WebElementsFeatures@7c24b813]" started-at="2022-01-02T11:43:39 IST" name="DriverSetup" finished-at="2022-01-02T11:43:47 IST" duration-ms="8069" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- keydown -->
-      </class> <!-- Selenium4Features.KeyboardActions -->
+        </test-method> <!-- DriverSetup -->
+        <test-method signature="ElementEnabled()[pri:5, instance:Selenium4Features.WebElementsFeatures@7c24b813]" started-at="2022-01-02T11:43:47 IST" name="ElementEnabled" description="Check Element is enabled and selected" finished-at="2022-01-02T11:43:50 IST" duration-ms="3122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ElementEnabled -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium4Features.WebElementsFeatures@7c24b813]" started-at="2022-01-02T11:43:50 IST" name="tearDown" finished-at="2022-01-02T11:43:51 IST" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium4Features.WebElementsFeatures -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
